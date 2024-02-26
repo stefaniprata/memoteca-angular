@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Pensamento } from '../pensamento';
 
 @Component({
   selector: 'app-listar-pensamentos',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./listar-pensamentos.component.css']
 })
 export class ListarPensamentosComponent implements OnInit {
+
+  listaPensamentos: Pensamento[] = [];
 
   constructor() { }
 
